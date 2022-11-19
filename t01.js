@@ -13,7 +13,7 @@ function submit(){
             console.log(data.time)
         },
         error:function (){
-            alert("登录失败")
+            alert("传送失败")
         }
     })
 }
