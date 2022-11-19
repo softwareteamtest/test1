@@ -1,34 +1,40 @@
-body{
+body {
     background-image: url(背景.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     /* backgro percentage */
     background-size: cover;
 }
-.box{
-    height: 400px;
+
+.box {
+    height: 300px;
     width: 400px;
     background-color: white;
     margin-top: 100px;
     margin-left: 400px;
     border: black;
     border-width: 1px;
-    border-style:solid; 
+    border-style: solid;
     display: flex;
 }
-.输入{
+
+.输入 {
     margin-left: 50px;
     margin-top: 10px;
 }
 
-li{
+li {
     list-style: none;
 }
-.windows{
-    flex-direction:column;
+
+.windows {
+    flex-direction: column;
 }
-.输入{
-    margin-bottom: 50px;
+
+.输入 {
+    width: 200px;
+    height: 25px;
 }
+
 /* .结果{
     margin-top: 100px;
 } */
@@ -37,14 +43,30 @@ li{
     margin-top: 10px;
     width: 100%;
     } */
-    .jie{
-        margin-left: 50px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+.jie {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
-    }
-    .最后{
-        margin-top: 100px;
-        margin-left: 100px;
+}
 
-    }
+.zuihou {
+    position: relative;
+    left: 70px;
+    top: 20px;
+
+
+}
+
+#myForm {
+    height: 300px;
+    width: 400px;
+}
+
+#submit {
+    width: 80px;
+}
+
+#reset {
+    width: 80px;
+}
