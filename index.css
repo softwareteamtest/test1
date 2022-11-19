@@ -1,0 +1,37 @@
+body{
+    background-image: url(背景.png);
+    background-repeat:no-repeat;
+    /* backgro percentage */
+    background-size: cover;
+}
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 400px;
+    border: black;
+    border-width: 1px;
+    border-style:solid; 
+    display: flex;
+}
+.输入{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.jg{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+li{
+    list-style: none;
+}
+.windows{
+    flex-direction:column;
+}
+.输入{
+    margin-bottom: 50px;
+}
+.结果{
+    margin-top: 100px;
+}
