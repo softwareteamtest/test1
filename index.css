@@ -17,12 +17,9 @@ body{
 }
 .输入{
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
-.jg{
-    margin-left: 50px;
-    margin-top: 50px;
-}
+
 li{
     list-style: none;
 }
@@ -32,6 +29,22 @@ li{
 .输入{
     margin-bottom: 50px;
 }
-.结果{
+/* .结果{
     margin-top: 100px;
-}
+} */
+/* input[type="submit"]{
+    line-height: 48px;
+    margin-top: 10px;
+    width: 100%;
+    } */
+    .jie{
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+    .最后{
+        margin-top: 100px;
+        margin-left: 100px;
+
+    }
