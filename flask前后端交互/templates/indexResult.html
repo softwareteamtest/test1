@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字大小写转换</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+</head>
+
+<body>
+<div class="box">
+    <!-- 这是背景的盒子 -->
+    <form id="myForm" method="post" style="margin: auto auto">
+        <ul class="window">
+            <li>
+                <input type="text" placeholder="请输入大写或小写数字" style="width: 200px;height: 30px;" class="输入"
+                       id="num" name="input" value="{{ inputData[i] }}">
+
+            </li>
+            <li><input type="text" style="width: 200px;height: 30px;" class="jie" id="result" value="{{ result[i] }}"></li>
+            <li class="zuihou">
+                <input type="submit" id="submit" onclick="submit()">
+                <input type="reset" id="reset" onclick="reset()">
+            </li>
+        </ul>
+    </form>
+</div>
+
+</body>
+
+</html>

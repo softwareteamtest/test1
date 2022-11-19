@@ -8,17 +8,18 @@
     <title>数字大小写转换</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-
+<script src="/JQuery-3.6.1.min.js"></script>
+<script src="/t01.js"></script>
 <body>
     <div class="box">
         <!-- 这是背景的盒子 -->
         <form id="myForm">
             <ul class="window">
                 <li>
-                    <input type="text" placeholder="请输入大写或小写数字" style="width: 200px;height: 30px;" class="输入" id="num">
+                    <input type="text" placeholder="请输入大写或小写数字" style="width: 500px;height: 50px;" class="输入" id="num">
 
                 </li>
-                <li><input type="text" style="width: 200px;height: 30px;" class="jie"></li>
+                <li><input type="text" style="width: 500px;height: 50px;" class="jie" id="result"></li>
                 <li class="zuihou">
                     <input type="submit" id="submit" onclick="submit()">
                     <input type="reset" id="reset" onclick="reset()">

@@ -1,0 +1,72 @@
+body {
+    background-image: url(背景.png);
+    background-repeat: no-repeat;
+    /* backgro percentage */
+    background-size: cover;
+}
+
+.box {
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 400px;
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+}
+
+.输入 {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.windows {
+    flex-direction: column;
+}
+
+.输入 {
+    width: 200px;
+    height: 25px;
+}
+
+/* .结果{
+    margin-top: 100px;
+} */
+/* input[type="submit"]{
+    line-height: 48px;
+    margin-top: 10px;
+    width: 100%;
+    } */
+.jie {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.zuihou {
+    position: relative;
+    left: 50px;
+    top: 20px;
+
+
+}
+
+#myForm {
+    height: 300px;
+    width: 400px;
+}
+
+#submit {
+    width: 100px;
+}
+
+#reset {
+    width: 100px;
+}

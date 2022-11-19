@@ -1,29 +1,25 @@
-def small_to_big(self, small):  ##小写转大写
-    max, min = self.validate(val=small)
-    big_str = '整'
-    change_swap = ['', '拾', '佰', '仟']
-    unit_swap = ['元', '万', '亿', '兆']
-    for index, num in enumerate(max[::-1]):
-        if index % 4 == 0:
-            change_swap[0] = unit_swap[index // 4]
-            if num == '0':  ##4的整数倍位零不加
-                big_str += change_swap[index % 4]
+  def small_to_big(self, small):  ##小写转大写
+        res = '整'
+        unit_middle = ['', '拾', '佰', '仟']
+        unit_money = ['元', '万', '亿']
+        for i, n in enumerate(small[::-1]):
+            if i % 4 == 0:
+                unit_middle[0] = unit_money[i // 4]
+                if n == '0':  ##4的整数倍位零不加
+                    res += unit_middle[i % 4]
+                    continue
+                res += '%s%s' % (unit_middle[i% 4], self.number_change[n])
+            else:
+                if n == '0':
+                    res += self.number_change[n]
+                    continue
+                res += '%s%s' % (unit_middle[i% 4], self.number_change[n])
+        res = res[::-1]
+        for i in range(len(res)):
+            if i == len(res):
                 continue
-            big_str += '%s%s' % (change_swap[index % 4], self.NUM_DICT[num])
-        else:
-            if num == '0':
-                big_str += self.NUM_DICT[num]
+            if res[i] == '零' and res[i + 1] == '零':
                 continue
-            big_str += '%s%s' % (change_swap[index % 4], self.NUM_DICT[num])
-    # 去掉多于的零
-    big_str = big_str[::-1]
-    tmp_str = ''
-    for i in range(len(big_str)):
-        if i == len(big_str):
-            continue
-        if big_str[i] == '零' and big_str[i + 1] == '零':
-            continue
-        if big_str[i] == '零' and big_str[i + 1] in unit_swap:
-            continue
-        tmp_str += big_str[i]
-    return tmp_str
+            if res[i] == '零' and res[i + 1] in unit_money:
+                continue
+        return res
