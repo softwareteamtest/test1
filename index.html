@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>数字大小写转换</title>
 </head>
+<script src="/JQuery-3.6.1.min.js"></script>
+<script src="/t01.js"></script>
 <body>
     <div class="box">
         这是背景的盒子
-        <form action="http://localhost:8000/" method="post">
+        <form id="myForm">
             <div class="window">
-                <input type="text" placeholder="请输入大写或小写数字">
+                <input type="text" placeholder="请输入大写或小写数字" id="num">
                 <input type="text">
-                <input type="submit" value="提交">
-                <input type="reset">
+                <input type="submit" id="submit" onclick="submit()">
+                <input type="reset" id="reset" onclick="reset()">
             </div>
         </form>
     </div>
