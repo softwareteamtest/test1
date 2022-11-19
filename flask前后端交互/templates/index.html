@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字大小写转换</title>
+    <style>
+        body {
+            background-image: url(https://img1.imgtp.com/2022/11/19/grKrL4mP.png);
+            background-repeat: no-repeat;
+            /* backgro percentage */
+            background-size: cover;
+        }
+
+        .box {
+            height: 300px;
+            width: 400px;
+            background-color: white;
+            margin-top: 100px;
+            margin-left: 400px;
+            border: black;
+            border-width: 1px;
+            border-style: solid;
+            display: flex;
+        }
+
+        .输入 {
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .windows {
+            flex-direction: column;
+        }
+
+        .输入 {
+            width: 200px;
+            height: 25px;
+        }
+
+        /* .结果{
+            margin-top: 100px;
+        } */
+        /* input[type="submit"]{
+            line-height: 48px;
+            margin-top: 10px;
+            width: 100%;
+            } */
+        .jie {
+            margin-left: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+        }
+
+        .zuihou {
+            position: relative;
+            left: 50px;
+            top: 20px;
+
+
+        }
+
+        #myForm {
+            height: 300px;
+            width: 400px;
+        }
+
+        #submit {
+            width: 100px;
+        }
+
+        #reset {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="box">
+    <!-- 这是背景的盒子 -->
+    <form id="myForm" method="post">
+        <ul class="window">
+            <li>
+                <input type="text" placeholder="请输入大写或小写数字" style="width: 200px;height: 30px;" class="输入"
+                       id="num" name="input">
+
+            </li>
+            <li><input type="text" style="width: 200px;height: 30px;" class="jie" id="result"></li>
+            <li class="zuihou">
+                <input type="submit" id="submit" onclick="submit()">
+                <input type="reset" id="reset" onclick="reset()">
+            </li>
+        </ul>
+    </form>
+</div>
+</body>
+
+</html>
